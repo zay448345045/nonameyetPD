@@ -228,7 +228,7 @@ public class TitleScene extends PixelScene {
         private static final int IMAGE_SIZE	= 32;
 
         private Image image;
-        //private BitmapText label;
+        private BitmapText label;
 		private RenderedText label;
 
         public DashboardItem( String text, int index ) {
@@ -236,7 +236,7 @@ public class TitleScene extends PixelScene {
 
             image.frame( image.texture.uvRect( index * IMAGE_SIZE, 0, (index + 1) * IMAGE_SIZE, IMAGE_SIZE ) );
             this.label.text( text );
-            //this.label.measure();
+            this.label.measure();
 			align(label);
 
             setSize( SIZE, SIZE );
@@ -249,7 +249,7 @@ public class TitleScene extends PixelScene {
             image = new Image( Assets.DASHBOARD );
             add( image );
 
-            //label = createText( 9 );
+            label = createText( 9 );
 			label = renderText( 9 );
             add( label );
         }
