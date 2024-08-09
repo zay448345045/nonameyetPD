@@ -229,7 +229,7 @@ public class TitleScene extends PixelScene {
 
         private Image image;
         private BitmapText label;
-		private RenderedText label;
+//		private RenderedText label;
 
         public DashboardItem( String text, int index ) {
             super();
@@ -250,7 +250,7 @@ public class TitleScene extends PixelScene {
             add( image );
 
             label = createText( 9 );
-			label = renderText( 9 );
+	//		label = renderText( 9 );
             add( label );
         }
 
