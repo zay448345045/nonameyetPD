@@ -17,8 +17,9 @@ jobs:
       uses: actions/setup-java@v4
       with:
         java-version: '11'
-     #   distribution: 'temurin'
-        distribution: 'zulu'
+     #   distribution: 'temurin'  
+     #dragonwell oracle semeru corretto microsoft liberica adopt-openj9 adopt
+        distribution: 'oracle'
      
         cache: gradle
 
