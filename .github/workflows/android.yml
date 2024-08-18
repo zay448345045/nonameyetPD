@@ -19,7 +19,7 @@ jobs:
         java-version: '11'
      #   distribution: 'temurin'  
      #dragonwell oracle semeru corretto microsoft liberica adopt-openj9 adopt
-        distribution: 'oracle'
+        distribution: 'adopt-openj9'
      
         cache: gradle
 
