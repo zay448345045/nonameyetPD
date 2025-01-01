@@ -2,24 +2,26 @@ name: Android CI
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    paths:
+     - 'action.on' # 只有 特定 文件的更改才构建
+#    branches: [ "main" ]
+#  pull_request:
+#    branches: [ "main" ]
 
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     steps:
     - uses: actions/checkout@v4
     - name: set up JDK 
       uses: actions/setup-java@v4
       with:
-        java-version: '9'
+        java-version: '23'
      #   distribution: 'temurin'  
      #dragonwell oracle semeru corretto microsoft liberica adopt-openj9 adopt
-        distribution: 'adopt-openj9'
+        distribution: 'temurin'
      
         cache: gradle
 
