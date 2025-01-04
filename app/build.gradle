@@ -1,12 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 35
+    //29
 
     defaultConfig {
         applicationId "com.ravenwolf.nnypd"
         minSdkVersion 14
-        targetSdkVersion 29
+        targetSdkVersion 35
     }
 
     buildTypes {
